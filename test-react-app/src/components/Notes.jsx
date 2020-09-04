@@ -11,30 +11,28 @@ const Notes = ({
   deleteNoteThunkCreator,
   fetchNoteThunkCreator,
 }) => {
-    const { t, i18n } = useTranslation();
-    function handleClick(lang) {
-      i18n.changeLanguage(lang);
-    }
+  const { t, i18n } = useTranslation();
+  function handleClick(lang) {
+    i18n.changeLanguage(lang);
+  }
   const [form, setForm] = useState({ ...newNote });
   const changeHandler = (event) => {
     setForm({ ...form, [event.target.name]: event.currentTarget.value });
   };
   //-------------------------Count number---------------------------//
-  let number =  moment(new Date()).format("DD-MM-YY HH:mm");
+  let number = moment(new Date()).format("DD-MM-YY HH:mm");
   notesArray.sort((a, b) => a.id - b.id);
   return (
     <div>
-      <h1 >{t('Notes.1')}</h1>
+      <h1>{t("Notes.1")}</h1>
       <fieldset>
-      <legend>{t('Current_note.1')}</legend>
-      <h2>{note.text}</h2>
+        <legend>{t("Current_note.1")}</legend>
+        <h2>{note.text}</h2>
       </fieldset>
       <form>
         <fieldset>
-          <legend>Create new note</legend>
-          <label htmlFor="firstName" >
-            First name{" "}
-          </label>
+          <legend>{t("New_note.1")}</legend>
+          <label htmlFor="firstName">{t("First_name.1")} </label>
           <input
             id="firstName"
             type="text"
@@ -44,8 +42,8 @@ const Notes = ({
             onChange={changeHandler}
             required
           />
-          <label >
-            Second name
+          <label>
+            {t("Second_name.1")}
             <input
               type="text"
               className="formInput"
@@ -55,8 +53,8 @@ const Notes = ({
               onChange={changeHandler}
             />
           </label>
-          <label >
-            Enter text
+          <label>
+            {t("Enter_note_text.1")}
             <textarea
               type="text"
               className="form-control"
@@ -67,7 +65,7 @@ const Notes = ({
             />
           </label>
           <label>
-            Status
+            {t("Set_status.1")}
             <select
               type="text"
               value={form.status}
@@ -79,8 +77,8 @@ const Notes = ({
             </select>
           </label>
           <button onClick={() => addNoteThunkCreator(form, number)}>
-        Submit
-      </button>
+            {t("Enter.1")}
+          </button>
         </fieldset>
       </form>
       {notesArray.map((note) => {
@@ -88,17 +86,19 @@ const Notes = ({
         //var index = profilesArray.findIndex((el) => el.id === profile.id);
         //console.log(index);
         return (
-          <div key={note.id} >
-            <p onClick={()=>fetchNoteThunkCreator(note.id)}>
-              {note.number}
-              {" "} {note.firstName} {note.secondName} {note.status} 
+          <div key={note.id}>
+            <p onClick={() => fetchNoteThunkCreator(note.id)}>
+              {note.number} {note.firstName} {note.secondName} {note.status}
             </p>
             <button onClick={() => deleteNoteThunkCreator(note.id)}>
               Delete
             </button>
             <button
               onClick={() =>
-                changeNoteThunkCreator({ ...form, number: note.number }, note.id)
+                changeNoteThunkCreator(
+                  { ...form, number: note.number },
+                  note.id
+                )
               }
             >
               Change

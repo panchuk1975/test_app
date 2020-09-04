@@ -1,5 +1,14 @@
 {
   "Thanks": { "1": "Thank you for watching this wideo!" },
   "Notes": { "1": "Notes" },
-  "Current_note": {"1": "Current note"}
+  "Current_note": {"1": "Current note"},
+  "New_note": {"1": "Create new note"},
+  "First_name": {"1": "Enter first name"},
+  "Second_name": {"1": "Enter second name"},
+  "Enter_note_text": {"1": "Enter text"},
+  "Set_status": {"1": "Set your status"},
+  "Enter": {"1": "Enter"},
+  "English": {"1": "English"},
+  "Ukrainian": {"1": "Ukrainian"},
+  "Russian": {"1": "Russian"}
 }

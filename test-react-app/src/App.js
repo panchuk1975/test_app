@@ -9,9 +9,9 @@ const App = (props) => {
   }
   return (
     <div>
-      <button onClick={() => handleClick('en')}>English</button>
-      <button onClick={() => handleClick('uk')}>Ukrainian</button>
-      <button onClick={() => handleClick('ru')}>Russian</button>
+      <button onClick={() => handleClick('en')}>{t('English.1')}</button>
+      <button onClick={() => handleClick('uk')}>{t('Ukrainian.1')}</button>
+      <button onClick={() => handleClick('ru')}>{t('Russian.1')}</button>
       <MainConteiner state={props.state} />
   <p>{t('Thanks.1')}</p>
     </div>
