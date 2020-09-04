@@ -88,7 +88,7 @@ export const fetchNotesThunkCreator = () => {
       const payload = Object.keys(data).map((key) => {
         return {
           ...data[key],
-          id: key,
+          id: Number(key)+1,
         };
       });
       dispatch(fetchNotes(payload));
