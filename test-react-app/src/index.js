@@ -3,6 +3,7 @@ import ReactDom from "react-dom";
 import { Provider } from "react-redux";
 import store from "./redux/reduxStore";
 import "./i18next";
+import "./css/main.css"
 
 import App from "./App.js";
 
