@@ -36,6 +36,7 @@ const Notes = ({
               value={form.firstName}
               name="firstName"
               onChange={changeHandler}
+              autoFocus
               required
             />
           </div>
@@ -86,7 +87,7 @@ const Notes = ({
 
           <div className="section">
             <button
-              className="button-item"
+              className="enter button-item"
               onClick={() => addNoteThunkCreator(form, number)}
             >
               {t("Enter.1")}

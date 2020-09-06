@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
     "concurrently": "^5.3.0",
+    "cypress": "^5.1.0",
     "i18next": "^19.7.0",
     "i18next-browser-languagedetector": "^6.0.1",
     "i18next-http-backend": "^1.0.18",
@@ -28,7 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "node-sass -w scss/ -o src/css/ --recursive"
+    "sass": "node-sass -w scss/ -o src/css/ --recursive",
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
