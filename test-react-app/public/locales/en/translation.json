@@ -1,5 +1,5 @@
 {
-  "Thanks": { "1": "Thank you for watching this wideo!" },
+  "Thanks": { "1": "Thanks for watching!" },
   "Notes": { "1": "Notes" },
   "Current_note": {"1": "Current note"},
   "New_note": {"1": "Create new note"},
@@ -10,5 +10,11 @@
   "Enter": {"1": "Enter"},
   "English": {"1": "English"},
   "Ukrainian": {"1": "Ukrainian"},
-  "Russian": {"1": "Russian"}
+  "Russian": {"1": "Russian"},
+  "Delete": {"1": "Delete"},
+  "Change": {"1": "Change"},
+  "Write_note": {"1": "Write note"},
+  "Choose_lang": {"1": "Choose languadge"},
+  "Busy": {"1": "Busy"},
+  "No busy": {"1": "No busy"}
 }

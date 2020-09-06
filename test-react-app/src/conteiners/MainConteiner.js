@@ -20,7 +20,7 @@ let mapStateToProps = (state) => {
 };
 
 let MainConteiner = compose(
-  Rainbow,
+  //Rainbow, // - can change text colors
   connect(mapStateToProps, {
     changeNoteThunkCreator,
     addNoteThunkCreator,

@@ -11,7 +11,7 @@ let rerenderEntireTree = (state) => {
   ReactDom.render(
     <Provider store={store}>
       <Suspense fallback={(<div>Loading ...</div>)}>
-        <App />
+        <App className="bg-app"/>
       </Suspense>
     </Provider>,
     document.getElementById("root")
