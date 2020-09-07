@@ -7,7 +7,7 @@ import {
   fetchNoteThunkCreator,
   fetchNotesThunkCreator,
 } from "../redux/notesReducer";
-import Rainbow from "../hocs/Rainbow";
+//import Rainbow from "../hocs/Rainbow";
 import { compose } from "redux";
 import { getNotesArraySelector, getNewNote, getNote } from "../redux/selectors";
 

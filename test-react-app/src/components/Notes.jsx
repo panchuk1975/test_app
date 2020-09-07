@@ -16,7 +16,6 @@ const Notes = ({
   const changeHandler = (event) => {
     setForm({ ...form, [event.target.name]: event.currentTarget.value });
   };
-  //-------------------------Count number---------------------------//
   let number = moment(new Date()).format("DD-MM-YY HH:mm");
   notesArray.sort((a, b) => a.id - b.id);
   return (
@@ -110,9 +109,6 @@ const Notes = ({
       </form>
 
       {notesArray.map((note) => {
-        //-----------------------Simply Index of Array----------------------//
-        //var index = profilesArray.findIndex((el) => el.id === profile.id);
-        //console.log(index);
         return (
           <div key={note.id} className="notes-block">
               <div className="text" onClick={() => fetchNoteThunkCreator(note.id)}>

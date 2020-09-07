@@ -4,7 +4,7 @@ const instance = axios.create({
   baseURL: "http://localhost:3001",
 });
 
-export const profileAPI = {
+export const notesAPI = {
   addNote(newNote, number) {
     return instance
       .post(
@@ -16,7 +16,7 @@ export const profileAPI = {
 
   changeNote(newNote, numberId) {
     return instance
-      .put(`/employees/${numberId}`,{ ...newNote })  
+      .put(`/employees/${numberId}`, { ...newNote })
       .then((response) => response.data);
   },
 
@@ -31,6 +31,8 @@ export const profileAPI = {
   },
 
   fetchNote(numberId) {
-    return instance.get(`/employees/${numberId}`).then((response) => response.data);
+    return instance
+      .get(`/employees/${numberId}`)
+      .then((response) => response.data);
   },
 };
