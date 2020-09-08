@@ -74,9 +74,7 @@ export const deleteNoteThunkCreator = (id) => {
 export const fetchNoteThunkCreator = (id) => {
   return (dispatch) => {
     notesAPI.fetchNote(id).then((data) => {
-      dispatch(fetchNote(data)).catch((error) => {
-        return error.response;
-      });
+      dispatch(fetchNote(data))
     });
   };
 };
@@ -97,9 +95,6 @@ export const fetchNotesThunkCreator = () => {
         });
         dispatch(fetchNotes(payload));
       })
-      .catch((error) => {
-        return error.response;
-      });
   };
 };
 

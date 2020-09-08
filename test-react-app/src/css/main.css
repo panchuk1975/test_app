@@ -17,6 +17,7 @@
     color: #228B22;
     transition: all 1s ease-out; }
   .button-item:hover {
+    cursor: pointer;
     background-color: #a3a1a1;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -100,6 +101,7 @@
   justify-content: space-around; }
 
 .text {
+  cursor: pointer;
   background-color: #c5c2c2;
   border-radius: 6px;
   margin: 5px;
