@@ -1,0 +1,2 @@
+ // "cypress": "^5.1.0",
+   // "cypress": "cypress open"
